@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Bruno</title>
+<h1> Please Enter Your Details For Our Dating Website! </h1>
+	
+<style>
+
+
+fieldset {
+		background-color: #FFFFE0;
+		border: 10px solid yellow;
+		margin-bottom: 10px;
+		width: 720px;
+
+		
+		}
+
+label {
+		display: inline-block;
+		text-align: right;
+		text-align: top;
+		width: 180px;
+
+
+      }
+label:hover {font-size:30px;}
+input:hover {font-size:30px;}
+
+input{
+	
+
+}
+
+
+#Address 
+		{
+		width: 360px;
+		Height: 50px;	
+		}
+
+#Email{width: auto;}
+#Whatsapp{width: auto;}
+#Inappchat{width: auto;}
+
+
+line {
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<form>
+	<fieldset>
+	<legend>Your Face</legend>
+	<label >Your image:</label><input type="file" required><br>
+	<label>Image preview:</label><img id="preview"><br>
+	</fieldset>
+
+	<fieldset>
+	<legend>Your General Details</legend>
+	<label for="name"> Name:</label> <input type="text" name="name" placeholder="Your Full Name"><br>
+	<label for="Gender"> Gender:</label> <input type="radio" name="Gender" value="Male">Male
+	<input type="radio" name="Gender" value="Female">Female<br>
+
+	<label for="age">Age:</label>
+	<input type="number" min="1" max="99" step="1" value="18" id="Age" name="Age" required> <br>
+
+	<label >Date of Birth:</label>
+	<input type="Date" id="birtday" name="birtday"><br>
+
+	<label for="color">Favorite Color</label>
+	<input type="color" id="color" name="color"><br>
+	
+
+	<form><label for" Country">Which Country: </label>
+		<select name="cities">
+		<option value="US">United States</option>
+		<option value="UK">United Kingdom</option>
+		<option value="U">Uraguay</option>
+		<option value="ZM">Zimbabwe</option>
+		<option value="R">Rusia</option>
+		<option value="EG">Egypt</option>
+
+		</select>
+	</form>
+	
+	</fieldset>
+
+	<fieldset>
+	<legend>Your Indicators</legend>
+	<label for="Height">Height:</label>
+	<line id="Short"> Short</line><input type="range" min="0" max="100" step="5" value="50" id="Height" name="Height">Tall<br>
+	<label for="Money">Salary:</label>
+	Poor<input type="range" min="0" max="100" step="5" value="50" id="Money" name="Money">Rich<br>	
+	</fieldset>
+
+
+	<fieldset>
+		<legend>Your Contact Information</legend>
+		<label for="email">Email:</label>
+		<input type="email" id="Email" name="Email" required><br>
+		<label for="Phone">Mobile:</label>
+		<input type="number" id="Phone" name="Phone"><br>
+		<label for="Address">Address:</label>
+		<input type="textarea" id="Address" name="Address"><br>
+
+		<label for="Method"> Method to contact you:</label> 
+		<input type="checkbox" id="Email" name="items" value="items">Email
+		<input type="checkbox" id="Whatsapp" name="items" value="items">Whatsapp
+		<input type="checkbox" id="Inappchat" name="items" value="items">In-app chat<br>
+		</fieldset>
+	
+	<form method="post" action="multipart/form-data">
+		<input type="submit" name="submit" value="submit">
+	</form>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js" id="preview">
+
+
+
+</script>
+</body>
+</html>
